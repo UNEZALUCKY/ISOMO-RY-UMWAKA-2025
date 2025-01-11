@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISOMO RY'UMWAKA 2025</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        #moving-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url("https://i.ibb.co/7jsXBXh/Screenshot-2025-01-11-181954.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            animation: move-diagonally 5s infinite alternate ease-in-out;
+        }
+
+        @keyframes move-diagonally {
+            1% {
+                top: 0;
+                left: 0%;
+            }
+        
+        100% {
+                top: -20%;
+                right: -20%;
+            }
+            25% {
+                top: 0;
+                right: -30%;
+            }
+           
+        
+            75% {
+                top: -20%;
+                right: -20%;
+            }
+            100% {
+                top: -20%;
+                right: 20%;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="moving-image"></div>
+</body>
+</html>
